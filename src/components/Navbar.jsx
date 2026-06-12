@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -7,10 +8,10 @@ const Navbar = () => {
       <h2>Navbar</h2>
       <input className='border-2 ' type="text" name="" id="" />
       <div className='flex gap-8'>
-        <Link to='/home'> Home</Link>
-        <Link to='/about'> About</Link>
-        <Link to='/product'> Product</Link>
-        <Link to='/course'> Course</Link>
+        <NavLink to='/home'> Home</NavLink>
+        <NavLink to='/about'> About</NavLink>
+        <NavLink to='/product'> Product</NavLink>
+        <NavLink to='/course'> Course</NavLink>
       </div>
     </div>
   )

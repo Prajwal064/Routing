@@ -8,6 +8,7 @@ import RandomAbout from './pages/RandomAbout'
 import { Product } from './pages/Product'
 import AnyCourses from './pages/AnyCourses'
 import NotFound from './pages/NotFound'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Navbar/>
       <Routes>
         <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/product' element={<Product/>}/>
         <Route path='/about' element={<RandomAbout/>}/>
@@ -22,6 +24,7 @@ const App = () => {
         <Route path='/course/:id' element={<AnyCourses/>}/>
         <Route path='/*' element={<NotFound/>}/>
       </Routes>
+      <Footer/>
  
     </div>
   )
